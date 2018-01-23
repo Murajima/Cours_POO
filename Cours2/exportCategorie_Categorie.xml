@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--
+    - Base de données :  'Produits'
+    -->
+<database name="Produits">
+    <!-- Table Categorie -->
+    <table name="Categorie">
+        <column name="codeCategorie">1</column>
+        <column name="nomCategorie">Alcools</column>
+    </table>
+    <table name="Categorie">
+        <column name="codeCategorie">2</column>
+        <column name="nomCategorie">Gâteaux salés</column>
+    </table>
+    <table name="Categorie">
+        <column name="codeCategorie">3</column>
+        <column name="nomCategorie">Laitages</column>
+    </table>
+    <table name="Categorie">
+        <column name="codeCategorie">4</column>
+        <column name="nomCategorie">Oeufs</column>
+    </table>
+</database>
