@@ -1,0 +1,35 @@
+class Categories
+!!!128644.java!!!	init() : void
+        add(new Categorie(1,"Alcools"));
+        add(new Categorie(2,"Gateaux Salés"));
+        add(new Categorie(3,"Jus de Fruits"));
+!!!128772.java!!!	getCategorieByCode(in code : int) : Categorie
+        //foreach sur l'ArrayList interne de la classe
+        for(Categorie cat:this){
+            if(cat.getCode() == code){
+                return cat;
+            }
+        }
+        return null;
+!!!128900.java!!!	getByLibelle(in nom : String) : Categorie
+        for (Categorie cat:this) {
+            if(cat.getNom().equals(nom)) {
+                return cat;
+            }
+        }
+        return null;
+!!!129028.java!!!	getCategoriesByMotif(in nom : String) : Categorie
+        ArrayList<Categorie> returnList = new ArrayList<Categorie>();
+        for(Categorie cat:this){
+            if(cat.getNom().toLowerCase().contains(nom.toLowerCase())){
+                returnList.add(cat);
+            }
+        }
+        return returnList;
+!!!129156.java!!!	add(inout cat : Categorie) : boolean
+        if(getCategorieByCode(cat.getCode()) == null){
+            return super.add(cat);
+        }
+        else {
+            return false;
+        }

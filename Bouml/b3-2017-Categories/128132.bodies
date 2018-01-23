@@ -1,0 +1,17 @@
+class Produits
+!!!129924.java!!!	getProduitByCode(in code : int) : Produit
+        //foreach sur l'ArrayList interne de la classe
+        for(Produit prod:this){
+            if(prod.getCode() == code){
+                return prod;
+            }
+        }
+        return null;
+!!!130052.java!!!	add(inout prod : Produit) : boolean
+        if (getProduitByCode(prod.getCode()) == null){
+            prod.getCategorie().addProduit(prod);
+            return super.add(prod);
+        }
+        else{
+            return false;
+        }

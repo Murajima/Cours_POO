@@ -1,0 +1,33 @@
+format 216
+"src" // src
+  revision 1
+  modified_by 4 "antoinepoussard"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  java_dir "/Users/antoinepoussard/Desktop/Workspace/Ynov/Cours_POO/Cours1/src/"
+  package_ref 128132 // beans
+
+  package_ref 128388 // test
+end

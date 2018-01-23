@@ -1,0 +1,17 @@
+class Categorie
+!!!128004.java!!!	Categorie(in code : int, in nom : String)
+        super();
+        this.code = code;
+        this.nom = nom;
+        produits = new Produits(); // Super important sinon null pointer exception
+!!!128132.java!!!	addProduit(inout p : Produit) : void
+        produits.add(p);
+!!!128260.java!!!	getCode() : int
+        return code;
+!!!128388.java!!!	getNom() : String
+        return nom;
+!!!128516.java!!!	toString() : String
+        return "Categorie{" +
+                "code=" + code +
+                ", nom='" + nom + '\'' +
+                '}';

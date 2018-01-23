@@ -1,0 +1,11 @@
+class TestProduits
+!!!130308.java!!!	main(inout args : String [[]]) : void
+        Categories cats = new Categories();
+        cats.init();
+        Produits prods = new Produits();
+        Produit testProd = new Produit(1,"Vin",cats.getCategorieByCode(1));
+        // prods.add(testProd);
+
+        for (Produit prod:prods) {
+            System.out.println(prod);
+        }

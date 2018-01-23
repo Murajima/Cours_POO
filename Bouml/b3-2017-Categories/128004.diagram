@@ -1,0 +1,29 @@
+format 216
+
+classcanvas 128004 class_ref 128004 // Categorie
+  classdiagramsettings member_max_width 0 end
+  xyz 113 74 2000
+end
+classcanvas 128132 class_ref 128132 // Produits
+  classdiagramsettings member_max_width 0 end
+  xyz 329 94 2006
+end
+classcanvas 128388 class_ref 128260 // Produit
+  classdiagramsettings member_max_width 0 end
+  xyz 249 267 2006
+end
+classcanvas 128644 class_ref 128388 // Categories
+  classdiagramsettings member_max_width 0 end
+  xyz 437 239 2000
+end
+relationcanvas 128260 relation_ref 128004 // <unidirectional association>
+  from ref 128004 z 2007 to ref 128132
+  role_a_pos 282 108 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128516 relation_ref 128260 // <unidirectional association>
+  from ref 128388 z 2007 to ref 128004
+  role_a_pos 192 178 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

@@ -1,0 +1,134 @@
+format 216
+"test" // src::test
+  revision 1
+  modified_by 4 "antoinepoussard"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  java_dir "/Users/antoinepoussard/Desktop/Workspace/Ynov/Cours_POO/Cours1/src/test/"
+  java_package "test"
+  classview 128260 "test"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 128644 "TestCategories"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 130180 "main"
+	class_operation public explicit_return_type "void"
+	nparams 1
+	  param inout name "args" explicit_type "String"
+	multiplicity "[]"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0}[] ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 128772 "TestProduits"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 130308 "main"
+	class_operation public explicit_return_type "void"
+	nparams 1
+	  param inout name "args" explicit_type "String"
+	multiplicity "[]"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0}[] ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+  end
+
+  deploymentview 128132 "test"
+    //deployment diagram settings
+    deploymentdiagramsettings
+     end
+    artifact 128516 "TestCategories"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import beans.Categorie;
+import beans.Categories;
+import java.util.ArrayList;
+${definition}"
+      associated_elems
+	class_ref 128644 // TestCategories
+      end
+    end
+
+    artifact 128644 "TestProduits"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import beans.Categories;
+import beans.Produit;
+import beans.Produits;
+${definition}"
+      associated_elems
+	class_ref 128772 // TestProduits
+      end
+    end
+  end
+end

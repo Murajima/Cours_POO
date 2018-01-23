@@ -1,0 +1,14 @@
+window_sizes 1350 697 337 1007 581 64
+cleanlooks_style
+diagrams
+  active  classdiagram_ref 128004 // cv
+    805 464 100 A4 0 0
+end
+show_stereotypes
+selected class_ref 128516 // ArrayList
+open
+  classview_ref 128004 // beans
+  classview_ref 128132 // unknown
+  classview_ref 128388 // cd
+end
+end

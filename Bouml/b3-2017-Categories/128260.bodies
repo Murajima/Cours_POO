@@ -1,0 +1,17 @@
+class Produit
+!!!129284.java!!!	Produit(in code : int, in nom : String, inout categorie : Categorie)
+        this.code = code;
+        this.nom = nom;
+        this.categorie = categorie;
+!!!129412.java!!!	getCode() : int
+        return code;
+!!!129540.java!!!	getNom() : String
+        return nom;
+!!!129668.java!!!	getCategorie() : Categorie
+        return categorie;
+!!!129796.java!!!	toString() : String
+        return "Produit{" +
+                "code=" + code +
+                ", nom='" + nom + '\'' +
+                ", categorie=" + categorie +
+                '}';
