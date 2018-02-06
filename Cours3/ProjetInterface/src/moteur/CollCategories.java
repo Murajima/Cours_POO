@@ -13,7 +13,7 @@ public class CollCategories extends ArrayList<Categorie>{
 	private int curseur=0;
 	public CollCategories() {
 		// on instancie mysqlb2b
-		MySqlB2B mb2b=new MySqlB2B("produits");
+		MySqlB2B mb2b=new MySqlB2B("Produits");
 		// on va chercher le resultset des catégories
 		ResultSet rs=mb2b.requete("Categorie");
 		// tant que
