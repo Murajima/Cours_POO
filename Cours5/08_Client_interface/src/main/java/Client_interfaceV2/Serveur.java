@@ -1,6 +1,8 @@
-package Client_interface;
+package Client_interfaceV2;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -14,10 +16,19 @@ public class Serveur {
             System.out.println("Un client est connecté !");
 
             PrintWriter sout = new PrintWriter(socket.getOutputStream(), true);
-            sout.println("Salut à tous !");
-            System.out.println("Message envoyé au client");
-            serverSocket.close();
-            System.out.println("Fermeture de la connexion");
+
+            InputStreamReader isr = new InputStreamReader(socket.getInputStream());
+            BufferedReader sin = new BufferedReader(isr);
+
+            while (true) {
+                String texteClient = sin.readLine();
+                if(texteClient.equals("quitte")){
+                    sout.println("okQuitte");
+                    break;
+                }
+                sout.println("j'ai bien reçu " + texteClient);
+            }
+
         } catch (IOException e) {
             e.printStackTrace();
         }
