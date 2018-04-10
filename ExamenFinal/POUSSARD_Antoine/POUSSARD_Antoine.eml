@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component LANGUAGE_LEVEL="JDK_1_5" inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/target/test-classes"/>
+	<contentEntry url="file://$MODULE_DIR$">
+		<excludeFolder url="file://$MODULE_DIR$/target"/>
+	</contentEntry>
+	<levels>
+		<level name="Maven: org.springframework:spring-beans:5.0.3.RELEASE" value="project"/>
+		<level name="Maven: org.springframework:spring-core:5.0.3.RELEASE" value="project"/>
+		<level name="Maven: org.springframework:spring-jcl:5.0.3.RELEASE" value="project"/>
+		<level name="Maven: mysql:mysql-connector-java:6.0.6" value="project"/>
+		<level name="Maven: org.jdom:jdom2:2.0.6" value="project"/>
+		<level name="Maven: org.springframework:spring-context:5.0.3.RELEASE" value="project"/>
+		<level name="Maven: org.springframework:spring-aop:5.0.3.RELEASE" value="project"/>
+		<level name="Maven: org.springframework:spring-expression:5.0.3.RELEASE" value="project"/>
+	</levels>
+</component>
